@@ -10,8 +10,8 @@ buttonSubmit.addEventListener('click', (e) => {
 	if(ageInput.value === ' ' || nameInput.value === ' ') alert('inputs cannot be empty');
 	return new Promise((res, rej) => {
 		setTimeout(() => {
-			if(ageInput.value > 18) res(ageInput.value);
-			else rej(ageInput.value);
+			if(ageInput.value > 18) res(name.value);
+			else rej(name.value);
 		}, 4000);
 	}).then((data) => {
 		alert('Welcome, ' + data + '. You can vote.');
